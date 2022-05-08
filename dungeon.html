@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DD Student Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+    <link rel="icon" type="image/png" href="assets/img/icons/torche.png" />
+</head>
+
+<body>
+
+    <audio class="audio" controls preload="metadata" loop autoplay>
+        <source src="assets/music/music1.mp3" type="audio/mpeg">
+        Votre navigateur ne peut pas lire d'audio
+    </audio>
+
+    <div class="homepage">
+
+        <h1 class="mainTitle"></h1>
+        <h2 class="unofficialEdition">Unofficial</h2>
+
+        <button class="buttonPlay">Jouer</button>
+        <button class="buttonCredits">Crédits</button>
+        <button class="buttonRules">Règles</button>
+        <button class="buttonAudio">Audio</button>
+
+    </div>
+
+    <div class="credits">
+
+        <button class="homeButton CreditsBackButton"></button>
+
+    </div>
+
+    <div class="rules">
+
+        <button class="homeButton RulesBackButton"></button>
+        <p>"Darkest Dungeon unofficial" est un dungeon crawler au tour par tour. C'est un jeu exigeant où patience et rigueur seront vos meilleures amies.
+            Le jeu ne vous prendra pas par la main et c'est à vous de découvrir toutes les mécaniques du jeu.
+            Votre but est d'avancer le plus loin possible dans le donjon le plus sombre. C'est une tâche périlleuse où la mort vous guette à chaque étage.
+            Pour vous aider dans cette quête vous aurez le choix entre différents héros qui ont chacun leurs propres caractéristiques.
+            <br>
+            <br>
+            Vous aurez accès à différents types de potions (Potion de soin, Potion de mana et une Potion qui booste vos dégâts). Attention leurs nombres est limités.Vous pourrez récupérer des potions sur les monstres que vous aurez tué.
+            Tous les dix étages vous rencontrerez un boss, c'est un combat plus dur que les autres mais les récompenses sont bien meilleures que sur les ennemis lambda. Une fois le boss vaincu, les ennemis deviendront plus forts.            
+            <br>
+            <br>Bonne chance !
+        </p>
+
+    </div>
+
+    <div class="heroChoice">
+
+        <button class="homeButton HeroChoiceBackButton"></button>
+
+        <h1 class="heroChoiceTitle">Sélection du Héro</h1>
+
+        <button class="hero1"></button>
+        <button class="hero2"></button>
+        <button class="hero3"></button>
+        <button class="hero4"></button>
+
+    </div>
+
+    <div class="story">
+
+        <div class="container"> <p>Vous vous êtes entraîné depuis votre plus tendre enfance afin de découvrir les secrets que renferment le donjon. 
+            Depuis toujours des aventuriers dans votre genre viennent tenter leur chance dans ce lieu lugubre.</p>
+            <p>Très peu en sont revenus et les quelques chanceux qui ont réussi à s'enfuir ont perdu la raison, incapables de raconter ce qu'ils ont vu là-bas.
+                Mais vous n'êtes pas comme eux, du moins c'est ce que vous vous répétez en arrivant devant l'entrée du donjon. 
+                Le doute n'est plus permis, vous avez fait ce choix en toute âme et conscience. 
+                Vous ne pouvez plus reculer, cependant vous ressentez tout le malheur que renferme ce lieu.</p> 
+            
+            <p>Vous gardez la tête froide et vous ouvrez la porte. Une fois à l'intérieur la porte se referme violemment derrière vous. Vous n'avez plus d'échappatoire.</p> 
+            <p>Alors que vous alliez essayer de rouvrir la porte, vous entendez le comité d’accueil venir en votre direction.
+            Vous n'avez plus le temps, il vous faudra trouver un autre chemin et pour cela vous allez devoir combattre.</p>
+        </div>
+
+        <button class="buttonEnterDungeon">Entrer</button>
+
+    </div>
+
+    <div class="gamePage">
+
+        <div class="hero"></div>
+        <div class="monster"></div>
+        <div class="heroHPBar">
+            <div class="heroHPBarFilling"></div>
+        </div>
+        <div class="heroManaBar">
+            <div class="heroManaBarFilling"></div>
+        </div>
+        <div class="monsterHPBar">
+            <div class="monsterHPBarFilling"></div>
+        </div>
+        <div class="hud">
+
+            <button class="item attack"></button>
+            <button class="item spell"></button>
+            <button class="item shield"></button>
+            <button class="item heal"></button>
+                <div class="countHealPotions"></div>
+            <button class="item mana"></button>
+                <div class="countManaPotions"></div>
+            <button class="item berz"></button>
+                <div class="countBerzPotions"></div>
+
+        </div>
+
+        <button class="homeButton GamePageBackButton"></button>
+    
+    </div>
+
+</body>
+
+</html>

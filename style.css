@@ -1,0 +1,610 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(56, 6, 6);
+}
+
+.audio {
+    display: none;
+    position : absolute;
+    margin: 0;
+    padding: 0;
+    border: solid 0.5vh rgb(78, 12, 12);
+    border-radius: 3vh;
+    box-shadow: inset 0 0 0.25em rgb(0, 0, 0);
+    left: 13.5vw;
+    top: 85vh;
+}
+
+.homepage {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    background-image: url("assets/img/background/homepage.8a11f2fc-3d2d-4b96-8783-3deec9f42943");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainTitle {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 1vw;
+    top: 1vh;
+    width: 35vw;
+    height: 30vh;
+    background-image: url("assets/img/background/mainTitle2.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 35vw 35vh;
+}
+
+.unofficialEdition {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: rgb(78, 12, 12);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4vh;
+    left: 28vw;
+    top: 23vh;
+    transform: rotate(-30deg);
+    text-shadow: 0 0 0.1em rgb(199, 198, 206);
+}
+
+.homeButton {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 4vw;
+    height: 10vh;
+    background-image: url("assets/img/icons/torcheAllumée.webp");
+    background-repeat: no-repeat;
+    background-size: 10vw 20vh;
+    background-position: center center;
+    background-size: contain;
+    top: 1vh;
+    right: 1vw;
+    border-radius: 3vh;
+    background-color: black;
+}
+
+.homeButton:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.buttonPlay {
+    width: 15vw;
+    height: 10vh;
+    color: rgb(20, 20, 20);
+    align-content: center center;
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 3vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    position: absolute;
+    background-size: contain;
+    border: currentColor solid 0.5vh;
+    left: 28vh;
+    top: 40vh;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+    
+}
+
+.buttonPlay:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    text-shadow: 0 0 0.125em rgb(92, 11, 11);
+    box-shadow: inset 0 0 0.25em rgb(0, 0, 0);
+}
+
+.buttonCredits {
+    width: 15vw;
+    height: 6vh;
+    color: rgb(20, 20, 20);
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 3vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    position: absolute;
+    background-size: contain;
+    border: currentColor solid 0.5vh;
+    left: 28vh;
+    top: 60vh;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+}
+
+.buttonCredits:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    text-shadow: 0 0 0.125em rgb(92, 11, 11);
+    box-shadow: inset 0 0 0.25em rgb(0, 0, 0);
+}
+
+.buttonRules {
+    width: 15vw;
+    height: 6vh;
+    color: rgb(20, 20, 20);
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 3vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    position: absolute;
+    background-size: contain;
+    border: currentColor solid 0.5vh;
+    left: 28vh;
+    top: 68vh;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+}
+
+.buttonRules:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    text-shadow: 0 0 0.125em rgb(92, 11, 11);
+    box-shadow: inset 0 0 0.25em rgb(0, 0, 0);
+}
+
+.buttonAudio {
+    width: 15vw;
+    height: 6vh;
+    color: rgb(20, 20, 20);
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 3vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    position: absolute;
+    background-size: contain;
+    border: currentColor solid 0.5vh;
+    left: 28vh;
+    top: 76vh;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+}
+
+.buttonAudio:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    text-shadow: 0 0 0.125em rgb(92, 11, 11);
+    box-shadow: inset 0 0 0.25em rgb(0, 0, 0);
+}
+
+.credits {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(44, 5, 5);
+    background-image: url("assets/img/background/bgCredits.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.rules {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(44, 5, 5);
+    background-image: url("assets/img/background/bgRules.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.rules p {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: rgb(117, 109, 109);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vh;
+    right: 2%;
+    left: 2%;
+    top: 15%;
+    text-shadow: 0 0 0.50em rgb(71, 12, 12);
+    align-content: center;
+    text-align: justify;
+    text-indent: 5em;
+}
+
+.heroChoice {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(44, 5, 5);
+    background-image: url("assets/img/background/BackgroundAChoisir.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.heroChoiceTitle{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10vh;
+    left: 28vw;
+    top: 1vh;
+    text-shadow: 0 0 0.125em rgb(172, 9, 9);
+}
+
+.hero1 {
+    position: absolute;
+    width: 11vw;
+    height: 44vh;
+    bottom: 5vh;
+    left: 12vw;
+    border: none;
+    background: none;
+    background-image: url("assets/img/heroes/hero00.png");
+    background-repeat: no-repeat;
+    background-size: 11vw 44vh;
+}
+
+.hero1:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url("assets/img/heroes/hero00reversed.png");
+}
+
+.hero2 {
+    position: absolute;
+    width: 15vw;
+    height: 60vh;
+    bottom: 5vh;
+    left: 32vw;
+    border: none;
+    background: none;
+    background-image: url("assets/img/heroes/hero01reversed.png");
+    background-repeat: no-repeat;
+    background-size: 15vw 60vh;
+}
+
+.hero2:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url("assets/img/heroes/hero01.png");
+}
+
+.hero3 {
+    position: absolute;
+    width: 15vw;
+    height: 60vh;
+    bottom: 5vh;
+    left: 53vw;
+    border: none;
+    background: none;
+    background-image: url("assets/img/heroes/hero03reversed.png");
+    background-repeat: no-repeat;
+    background-size: 15vw 60vh;
+}
+
+.hero3:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url("assets/img/heroes/hero03.png");
+}
+
+.hero4 {
+    position: absolute;
+    width: 12vw;
+    height: 48vh;
+    bottom: 5vh;
+    left: 73vw;
+    border: none;
+    background: none;
+    background-image: url("assets/img/heroes/hero02.png");
+    background-repeat: no-repeat;
+    background-size: 12vw 48vh;
+}
+
+.hero4:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url("assets/img/heroes/hero02reversed.png");
+}
+
+.story {
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(44, 5, 5);
+    background-image: url("assets/img/background/story.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.container {
+    color: rgb(202, 30, 30);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: rgb(117, 109, 109);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3vh;
+    right: 2%;
+    left: 2%;
+    top: 2%;
+    text-shadow: 0 0 0.125em rgb(71, 12, 12);
+    align-content: center;
+    text-align: justify;
+    text-indent: 5em;
+}
+
+.buttonEnterDungeon {
+    width: 15vw;
+    height: 10vh;
+    color: rgb(20, 20, 20);
+    align-content: center center;
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 3vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    position: absolute;
+    background-size: contain;
+    border: currentColor solid 0.5vh;
+    left: 28vh;
+    top: 60vh;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+    
+}
+
+.buttonEnterDungeon:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    text-shadow: 0 0 0.125em rgb(92, 11, 11);
+    box-shadow: inset 0 0 0.25em rgb(0, 0, 0);
+}
+
+.gamePage {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/img/background/Background06.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.attack {
+    position: absolute;
+    width: 4vw;
+    height: 8vh;
+    bottom: 50vh;
+    left: 4vw;
+    border: solid 0.5vh rgb(20, 20, 20);
+    border-radius: 2vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    background-image: url("assets/img/icons/axeReversed.png");
+    background-repeat: no-repeat;
+    background-size: 4vw 8vh;
+    background-position: center center;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+}
+
+.attack:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url("assets/img/icons/axeReversedRotated.png");
+}
+
+.spell {
+    position: absolute;
+    width: 4vw;
+    height: 8vh;
+    bottom: 41vh;
+    left: 4vw;
+    border: solid 0.5vh rgb(20, 20, 20);
+    border-radius: 2vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    background-image: url("assets/img/icons/wandReversed.png");
+    background-repeat: no-repeat;
+    background-size: 4vw 8vh;
+    background-position: center center;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+}
+
+.spell:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url("assets/img/icons/wand.png");
+}
+
+.shield {
+    position: absolute;
+    width: 4vw;
+    height: 8vh;
+    bottom: 32vh;
+    left: 4vw;
+    border: solid 0.5vh rgb(20, 20, 20);
+    border-radius: 2vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    background-image: url("assets/img/icons/shield.png");
+    background-repeat: no-repeat;
+    background-size: 4vw 8vh;
+    background-position: center center;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+}
+
+.shield:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url("assets/img/icons/shieldRotated.png");
+}
+
+.heal {
+    position: absolute;
+    width: 4vw;
+    height: 8vh;
+    bottom: 23vh;
+    left: 4vw;
+    border: solid 0.5vh rgb(20, 20, 20);
+    border-radius: 2vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    background-image: url("assets/img/icons/potionRed.png");
+    background-repeat: no-repeat;
+    background-size: 4vw 8vh;
+    background-position: center center;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+}
+
+.heal:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url("assets/img/icons/potionRedReversed.png");
+}
+
+.mana {
+    position: absolute;
+    width: 4vw;
+    height: 8vh;
+    bottom: 14vh;
+    left: 4vw;
+    border: solid 0.5vh rgb(20, 20, 20);
+    border-radius: 2vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    background-image: url("assets/img/icons/potionBlue.png");
+    background-repeat: no-repeat;
+    background-size: 4vw 8vh;
+    background-position: center center;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+}
+
+.mana:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url("assets/img/icons/potionBlueReversed.png");
+}
+
+.berz {
+    position: absolute;
+    width: 4vw;
+    height: 8vh;
+    bottom: 5vh;
+    left: 4vw;
+    border: solid 0.5vh rgb(20, 20, 20);
+    border-radius: 2vh;
+    background-color: rgba(114, 96, 70, 0.7);
+    background-image: url("assets/img/icons/potionGreen.png");
+    background-repeat: no-repeat;
+    background-size: 4vw 8vh;
+    background-position: center center;
+    box-shadow: inset 0 0 0.5em rgb(0, 0, 0);
+}
+
+.berz:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-image: url("assets/img/icons/potionGreenReversed.png");
+}
+
+.heroHPBar {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 15vw;
+    height: 1vh;
+    top: 18vh;
+    left: 0vw;
+    border: solid 0.25vh rgb(114, 96, 70, 0.7);
+    background-color: rgb(114, 96, 70, 0.7);
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+.heroHPBarFilling {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(133, 28, 28);
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+    border: none;
+}
+
+.heroManaBar {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 8vw;
+    height: 1vh;
+    top: 19.7vh;
+    left: 0vw;
+    border: solid 0.25vh rgb(114, 96, 70, 0.7);
+    background-color: rgb(114, 96, 70, 0.7);
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+}
+
+.heroManaBarFilling {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(22, 71, 163);
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh;
+    border: none;
+}
+
+.monsterHPBar {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 50vw;
+    height: 3vh;
+    top: 15vh;
+    right: 0vw;
+    border: solid 0.25vh rgb(114, 96, 70, 0.7);
+    background-color: rgb(114, 96, 70, 0.7);
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+    direction: rtl;
+}
+
+.monsterHPBarFilling {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(182, 62, 15);
+    border-top-left-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+    border: none;
+}
+
+.hero {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 15vw;
+    height: 60vh;
+    bottom: 5vh;
+    left: 12vw;
+    border: none;
+    background: none;
+    background-image: url("assets/img/heroes/hero03.png");
+    background-repeat: no-repeat;
+    background-size: 15vw 60vh;
+}
+
+.monster {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    height: 75vh;
+    bottom: 5vh;
+    right: 2vw;
+    border: none;
+    background:none;
+    background-image: url("assets/img/vilains/monster03.png");
+    background-repeat: no-repeat;
+    background-size: 40vw 75vh;
+}
